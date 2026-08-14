@@ -31,6 +31,9 @@ class PackageTests(unittest.TestCase):
         text = json.dumps(theme)
         self.assertIn("#171815", text)
         self.assertIn("#5E9A8A", text)
+        self.assertIn('"file_tab_style": "rounded"', text)
+        unselected_tab = next(rule for rule in theme["rules"] if rule.get("class") == "tab_control" and "!selected" in rule.get("attributes", []))
+        self.assertEqual(unselected_tab["layer1.tint"], "#1F201D")
 
     def test_extensions_and_semantics_are_present(self):
         scopes = " ".join(rule.get("scope", "") for rule in self.rules)

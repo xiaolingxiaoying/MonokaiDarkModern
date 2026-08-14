@@ -11,9 +11,9 @@
     "rules": [
         {"class": "title_bar", "style": "dark"},
         {"class": "tabset_control", "layer0.tint": "#171815"},
-        {"class": "tabset_control", "settings": {"file_tab_style": "square"}, "tab_overlap": 0, "spacing": 0, "tab_width": 0, "tab_min_width": 0},
-        {"class": "tab_control", "settings": {"file_tab_style": "square"}, "attributes": ["!selected"], "layer1.tint": "#171815"},
-        {"class": "tab_control", "settings": {"file_tab_style": "square"}, "attributes": ["selected"], "layer1.tint": "#242422", "layer2.tint": "#5E9A8A", "layer2.opacity": 1.0},
+        {"class": "tabset_control", "settings": {"file_tab_style": "rounded"}, "tab_overlap": 0, "spacing": 0, "tab_width": 0, "tab_min_width": 0},
+        {"class": "tab_control", "settings": {"file_tab_style": "rounded"}, "attributes": ["!selected"], "layer1.tint": "#1F201D"},
+        {"class": "tab_control", "settings": {"file_tab_style": "rounded"}, "attributes": ["selected"], "layer1.tint": "#242422", "layer2.tint": "#5E9A8A", "layer2.opacity": 1.0},
         {"class": "tab_label", "parents": [{"class": "tab_control", "attributes": ["!selected"]}], "fg": "#92948A"},
         {"class": "tab_label", "parents": [{"class": "tab_control", "attributes": ["selected"]}], "fg": "#F4F1DE"},
         {"class": "sidebar_container", "layer0.tint": "#171815"},
