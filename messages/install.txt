@@ -1,0 +1,5 @@
+Monokai Dark Modern is installed.
+
+Use Preferences > Package Settings > Monokai Dark Modern to select its UI
+theme and color scheme. LSP semantic highlighting is optional.
+

@@ -1,0 +1,415 @@
+{
+    "name": "Monokai Dark Modern",
+    "source": "source/Monokai.sublime-color-scheme",
+    "generated_rule_count": 68,
+    "provenance": [
+        {
+            "kind": "monokai",
+            "name": "Comment",
+            "scope": "comment",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "String",
+            "scope": "string",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "String Key",
+            "scope": "meta.mapping.key string - meta.mapping.key meta meta | meta.mapping.key meta.mapping.key string - meta.mapping.key meta.mapping.key meta meta",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Number",
+            "scope": "constant.numeric",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Number suffix",
+            "scope": "storage.type.numeric",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Keyword",
+            "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word, source.ruby keyword.declaration",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Storage",
+            "scope": "storage",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Storage type",
+            "scope": "storage.type",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Entity name",
+            "scope": "entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Function argument",
+            "scope": "variable.parameter - (source.c | source.c++ | source.objc | source.objc++)",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Language variable",
+            "scope": "variable.language",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Tag name",
+            "scope": "entity.name.tag | meta.mapping.key string.unquoted",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Function call",
+            "scope": "variable.function, variable.annotation",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Library function",
+            "scope": "support.function, support.macro",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Invalid",
+            "scope": "invalid",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "JSON String",
+            "scope": "meta.structure.dictionary.json string.quoted.double.json",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "YAML String",
+            "scope": "string.unquoted.yaml",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown headings",
+            "scope": "markup.heading",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown heading punctuation",
+            "scope": "markup.heading punctuation.definition.heading",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown links",
+            "scope": "markup.underline.link",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown bold",
+            "scope": "markup.bold",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown italic",
+            "scope": "markup.italic",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown underline",
+            "scope": "markup.underline",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown horizontal rule",
+            "scope": "punctuation.definition.thematic-break",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown quote",
+            "scope": "markup.quote punctuation.definition.blockquote",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown numbered bullet",
+            "scope": "markup.list.numbered.bullet",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown raw block",
+            "scope": "markup.raw",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Markdown raw punctuation",
+            "scope": "markup.raw punctuation.definition.raw",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Diff deleted",
+            "scope": "diff.deleted, markup.deleted",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Diff inserted",
+            "scope": "diff.inserted, markup.inserted",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Diff changed",
+            "scope": "diff.changed, markup.changed",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Diff deleted background",
+            "scope": "diff.deleted",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Diff inserted background",
+            "scope": "diff.inserted",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Message error",
+            "scope": "message.error",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Message warning",
+            "scope": "message.warning",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "monokai",
+            "name": "Message info",
+            "scope": "message.info",
+            "source": "source/Monokai.sublime-color-scheme"
+        },
+        {
+            "kind": "extensions",
+            "name": "Function declarations and calls",
+            "scope": "entity.name.function, meta.function-call entity.name.function, meta.function-call variable.function, variable.function, support.function.builtin",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "Types, interfaces and namespaces",
+            "scope": "entity.name.type, entity.name.interface, entity.name.struct, entity.name.enum, entity.name.type.alias, entity.name.class, entity.name.namespace, variable.other.namespace, entity.other.inherited-class",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "Members, properties and object keys",
+            "scope": "variable.other.member, variable.other.property, support.variable, meta.object-literal.key, meta.mapping.key, meta.mapping.key string, entity.name.variable",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "Enum members and readonly values",
+            "scope": "variable.other.constant, constant.other.enum, constant.other.enummember, variable.other.enummember",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "Preprocessor and macros",
+            "scope": "meta.preprocessor, entity.name.function.preprocessor, punctuation.definition.directive",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "Regular expressions",
+            "scope": "string.regexp, constant.regexp, constant.character.character-class.regexp, keyword.operator.quantifier.regexp",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "HTML/CSS names",
+            "scope": "entity.name.tag.css, entity.name.tag.less, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css, support.type.property-name",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "Markdown links and URLs",
+            "scope": "markup.underline.link, markup.underline.link.image, string.other.link, meta.link.inline string, meta.link.reference string",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "Markdown punctuation",
+            "scope": "punctuation.definition.list_item.markdown, punctuation.definition.blockquote.markdown, punctuation.definition.raw.code-fence, punctuation.separator.table-cell.markdown",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "LaTeX commands",
+            "scope": "support.function.general.latex, support.function.internal.latex, support.function.general.tex, support.function.internal.tex, entity.name.newcommand.latex",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "LaTeX structure",
+            "scope": "entity.name.environment.latex, entity.name.section.latex, entity.name.section.tex, support.class.latex, variable.parameter.function.latex",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "extensions",
+            "name": "LaTeX references",
+            "scope": "constant.other.reference.latex, constant.other.citation.latex, variable.other.reference.latex, variable.other.citation.latex, entity.name.label.latex",
+            "source": "mappings/extensions.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "LSP semantic highlighting activation",
+            "scope": "meta.semantic-token",
+            "source": "LSP activation exception"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic functions",
+            "scope": "meta.semantic-token.function, meta.semantic-token.method, meta.semantic-token.event",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic macros",
+            "scope": "meta.semantic-token.macro",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic types",
+            "scope": "meta.semantic-token.type, meta.semantic-token.class, meta.semantic-token.interface, meta.semantic-token.struct, meta.semantic-token.enum, meta.semantic-token.namespace, meta.semantic-token.typeparameter",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic variables",
+            "scope": "meta.semantic-token.variable, meta.semantic-token.parameter, meta.semantic-token.property",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic enum members",
+            "scope": "meta.semantic-token.enummember",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic keywords",
+            "scope": "meta.semantic-token.keyword, meta.semantic-token.modifier",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic comments",
+            "scope": "meta.semantic-token.comment",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic strings",
+            "scope": "meta.semantic-token.string",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic numbers",
+            "scope": "meta.semantic-token.number",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic regular expressions",
+            "scope": "meta.semantic-token.regexp",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic operators",
+            "scope": "meta.semantic-token.operator",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic decorators",
+            "scope": "meta.semantic-token.decorator",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic labels",
+            "scope": "meta.semantic-token.label",
+            "source": "mappings/semantic_tokens.json"
+        },
+        {
+            "kind": "semantic",
+            "name": "Semantic readonly values",
+            "scope": "meta.semantic-token.variable.readonly, meta.semantic-token.parameter.readonly, meta.semantic-token.property.readonly",
+            "source": "mappings/semantic_tokens.json"
+        }
+    ]
+}

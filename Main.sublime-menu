@@ -1,0 +1,22 @@
+[
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "Monokai Dark Modern",
+                        "children": [
+                            {"caption": "Select Color Scheme", "command": "monokai_dark_modern_select_color_scheme"},
+                            {"caption": "Select UI Theme", "command": "monokai_dark_modern_select_ui_theme"},
+                            {"caption": "Inspect Highlight", "command": "monokai_dark_modern_inspect_highlight"},
+                            {"caption": "Check Semantic Highlighting", "command": "monokai_dark_modern_check_semantic_highlighting"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
+

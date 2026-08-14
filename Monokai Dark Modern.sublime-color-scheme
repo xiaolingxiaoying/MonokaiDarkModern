@@ -1,0 +1,397 @@
+{
+    "name": "Monokai Dark Modern",
+    "author": "Monokai by Sublime HQ Pty Ltd and Wimer Hazenberg; Dark Modern adaptation",
+    "variables": {
+        "black": "hsl(0, 0%, 0%)",
+        "black2": "hsl(60, 17%, 11%)",
+        "black3": "hsl(70, 8%, 15%)",
+        "blue": "hsl(190, 81%, 67%)",
+        "grey": "hsla(55, 8%, 31%, 0.7)",
+        "orange": "hsl(32, 98%, 56%)",
+        "orange2": "hsl(30, 83%, 34%)",
+        "orange3": "hsl(47, 100%, 79%)",
+        "purple": "hsl(261, 100%, 75%)",
+        "red": "hsl(0, 93%, 59%)",
+        "red2": "hsl(338, 95%, 56%)",
+        "white": "hsl(0, 0%, 97%)",
+        "white2": "hsl(60, 36%, 96%)",
+        "white3": "hsl(60, 30%, 96%)",
+        "yellow": "hsl(54, 70%, 68%)",
+        "yellow2": "hsl(80, 76%, 53%)",
+        "yellow3": "hsl(60, 12%, 79%)",
+        "yellow4": "hsl(55, 11%, 22%)",
+        "yellow5": "hsl(50, 11%, 41%)"
+    },
+    "globals": {
+        "foreground": "var(white3)",
+        "background": "#242422",
+        "caret": "#F4F1DE",
+        "block_caret": "color(var(white2) alpha(0.2))",
+        "block_caret_border": "color(var(white2) alpha(0.8))",
+        "invisibles": "color(var(white3) alpha(0.35))",
+        "line_highlight": "#2C2D29",
+        "selection": "#3A514A",
+        "selection_border": "#3A514A",
+        "misspelling": "#FF6188",
+        "active_guide": "#5E9A8A",
+        "find_highlight_foreground": "#171815",
+        "find_highlight": "#C9A55A",
+        "brackets_options": "underline",
+        "brackets_foreground": "#A9D2C3",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "#A9D2C3",
+        "gutter_foreground": "#8A8C82",
+        "gutter_foreground_highlight": "#F4F1DE",
+        "guide": "#393A35"
+    },
+    "rules": [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(yellow5)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "String Key",
+            "scope": "meta.mapping.key string - meta.mapping.key meta meta | meta.mapping.key meta.mapping.key string - meta.mapping.key meta.mapping.key meta meta",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Number suffix",
+            "scope": "storage.type.numeric",
+            "foreground": "var(blue)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word, source.ruby keyword.declaration",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "foreground": "var(blue)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Entity name",
+            "scope": "entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(yellow2)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter - (source.c | source.c++ | source.objc | source.objc++)",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Language variable",
+            "scope": "variable.language",
+            "foreground": "var(orange)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag | meta.mapping.key string.unquoted",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Function call",
+            "scope": "variable.function, variable.annotation",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function, support.macro",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "foreground": "var(blue)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "var(white2)",
+            "background": "var(red2)"
+        },
+        {
+            "name": "JSON String",
+            "scope": "meta.structure.dictionary.json string.quoted.double.json",
+            "foreground": "var(yellow3)"
+        },
+        {
+            "name": "YAML String",
+            "scope": "string.unquoted.yaml",
+            "foreground": "var(white3)"
+        },
+        {
+            "name": "Markdown headings",
+            "scope": "markup.heading",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markdown heading punctuation",
+            "scope": "markup.heading punctuation.definition.heading",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Markdown links",
+            "scope": "markup.underline.link",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Markdown bold",
+            "scope": "markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markdown italic",
+            "scope": "markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markdown underline",
+            "scope": "markup.underline",
+            "font_style": "underline"
+        },
+        {
+            "name": "Markdown horizontal rule",
+            "scope": "punctuation.definition.thematic-break",
+            "foreground": "var(yellow5)"
+        },
+        {
+            "name": "Markdown quote",
+            "scope": "markup.quote punctuation.definition.blockquote",
+            "foreground": "var(yellow5)"
+        },
+        {
+            "name": "Markdown numbered bullet",
+            "scope": "markup.list.numbered.bullet",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Markdown raw block",
+            "scope": "markup.raw",
+            "background": "color(var(white) alpha(0.094))"
+        },
+        {
+            "name": "Markdown raw punctuation",
+            "scope": "markup.raw punctuation.definition.raw",
+            "foreground": "color(var(white) alpha(0.67))"
+        },
+        {
+            "name": "Diff deleted",
+            "scope": "diff.deleted, markup.deleted",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Diff inserted",
+            "scope": "diff.inserted, markup.inserted",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Diff changed",
+            "scope": "diff.changed, markup.changed",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Diff deleted background",
+            "scope": "diff.deleted",
+            "background": "hsla(338, 50%, 56%, 0.15)"
+        },
+        {
+            "name": "Diff inserted background",
+            "scope": "diff.inserted",
+            "background": "hsla(80, 50%, 53%, 0.15)"
+        },
+        {
+            "name": "Message error",
+            "scope": "message.error",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Message warning",
+            "scope": "message.warning",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Message info",
+            "scope": "message.info",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Function declarations and calls",
+            "scope": "entity.name.function, meta.function-call entity.name.function, meta.function-call variable.function, variable.function, support.function.builtin",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Types, interfaces and namespaces",
+            "scope": "entity.name.type, entity.name.interface, entity.name.struct, entity.name.enum, entity.name.type.alias, entity.name.class, entity.name.namespace, variable.other.namespace, entity.other.inherited-class",
+            "foreground": "var(yellow2)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Members, properties and object keys",
+            "scope": "variable.other.member, variable.other.property, support.variable, meta.object-literal.key, meta.mapping.key, meta.mapping.key string, entity.name.variable",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Enum members and readonly values",
+            "scope": "variable.other.constant, constant.other.enum, constant.other.enummember, variable.other.enummember",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Preprocessor and macros",
+            "scope": "meta.preprocessor, entity.name.function.preprocessor, punctuation.definition.directive",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Regular expressions",
+            "scope": "string.regexp, constant.regexp, constant.character.character-class.regexp, keyword.operator.quantifier.regexp",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "HTML/CSS names",
+            "scope": "entity.name.tag.css, entity.name.tag.less, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css, support.type.property-name",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Markdown links and URLs",
+            "scope": "markup.underline.link, markup.underline.link.image, string.other.link, meta.link.inline string, meta.link.reference string",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Markdown punctuation",
+            "scope": "punctuation.definition.list_item.markdown, punctuation.definition.blockquote.markdown, punctuation.definition.raw.code-fence, punctuation.separator.table-cell.markdown",
+            "foreground": "var(yellow5)"
+        },
+        {
+            "name": "LaTeX commands",
+            "scope": "support.function.general.latex, support.function.internal.latex, support.function.general.tex, support.function.internal.tex, entity.name.newcommand.latex",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "LaTeX structure",
+            "scope": "entity.name.environment.latex, entity.name.section.latex, entity.name.section.tex, support.class.latex, variable.parameter.function.latex",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "LaTeX references",
+            "scope": "constant.other.reference.latex, constant.other.citation.latex, variable.other.reference.latex, variable.other.citation.latex, entity.name.label.latex",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "LSP semantic highlighting activation",
+            "scope": "meta.semantic-token",
+            "background": "#00000101"
+        },
+        {
+            "name": "Semantic functions",
+            "scope": "meta.semantic-token.function, meta.semantic-token.method, meta.semantic-token.event",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Semantic macros",
+            "scope": "meta.semantic-token.macro",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Semantic types",
+            "scope": "meta.semantic-token.type, meta.semantic-token.class, meta.semantic-token.interface, meta.semantic-token.struct, meta.semantic-token.enum, meta.semantic-token.namespace, meta.semantic-token.typeparameter",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Semantic variables",
+            "scope": "meta.semantic-token.variable, meta.semantic-token.parameter, meta.semantic-token.property",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Semantic enum members",
+            "scope": "meta.semantic-token.enummember",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Semantic keywords",
+            "scope": "meta.semantic-token.keyword, meta.semantic-token.modifier",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Semantic comments",
+            "scope": "meta.semantic-token.comment",
+            "foreground": "var(yellow5)"
+        },
+        {
+            "name": "Semantic strings",
+            "scope": "meta.semantic-token.string",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Semantic numbers",
+            "scope": "meta.semantic-token.number",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Semantic regular expressions",
+            "scope": "meta.semantic-token.regexp",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Semantic operators",
+            "scope": "meta.semantic-token.operator",
+            "foreground": "var(white3)"
+        },
+        {
+            "name": "Semantic decorators",
+            "scope": "meta.semantic-token.decorator",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Semantic labels",
+            "scope": "meta.semantic-token.label",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Semantic readonly values",
+            "scope": "meta.semantic-token.variable.readonly, meta.semantic-token.parameter.readonly, meta.semantic-token.property.readonly",
+            "foreground": "var(purple)"
+        }
+    ]
+}

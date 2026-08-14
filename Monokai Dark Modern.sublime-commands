@@ -1,0 +1,7 @@
+[
+    {"caption": "Monokai Dark Modern: Select Color Scheme", "command": "monokai_dark_modern_select_color_scheme"},
+    {"caption": "Monokai Dark Modern: Select UI Theme", "command": "monokai_dark_modern_select_ui_theme"},
+    {"caption": "Monokai Dark Modern: Inspect Highlight", "command": "monokai_dark_modern_inspect_highlight"},
+    {"caption": "Monokai Dark Modern: Check Semantic Highlighting", "command": "monokai_dark_modern_check_semantic_highlighting"}
+]
+

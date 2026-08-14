@@ -1,0 +1,18 @@
+{
+    "groups": [
+        {"name": "Semantic functions", "tokens": ["function", "method", "event"], "foreground": "var(blue)"},
+        {"name": "Semantic macros", "tokens": ["macro"], "foreground": "var(red2)"},
+        {"name": "Semantic types", "tokens": ["type", "class", "interface", "struct", "enum", "namespace", "typeParameter"], "foreground": "var(yellow2)"},
+        {"name": "Semantic variables", "tokens": ["variable", "parameter", "property"], "foreground": "var(blue)"},
+        {"name": "Semantic enum members", "tokens": ["enumMember"], "foreground": "var(purple)"},
+        {"name": "Semantic keywords", "tokens": ["keyword", "modifier"], "foreground": "var(red2)"},
+        {"name": "Semantic comments", "tokens": ["comment"], "foreground": "var(yellow5)"},
+        {"name": "Semantic strings", "tokens": ["string"], "foreground": "var(yellow)"},
+        {"name": "Semantic numbers", "tokens": ["number"], "foreground": "var(purple)"},
+        {"name": "Semantic regular expressions", "tokens": ["regexp"], "foreground": "var(orange)"},
+        {"name": "Semantic operators", "tokens": ["operator"], "foreground": "var(white3)"},
+        {"name": "Semantic decorators", "tokens": ["decorator"], "foreground": "var(blue)"},
+        {"name": "Semantic labels", "tokens": ["label"], "foreground": "var(orange)"}
+    ],
+    "readonly": ["variable.readonly", "parameter.readonly", "property.readonly"]
+}

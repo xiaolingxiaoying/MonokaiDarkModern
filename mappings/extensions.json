@@ -1,0 +1,17 @@
+{
+    "rules": [
+        {"name": "Function declarations and calls", "scope": "entity.name.function, meta.function-call entity.name.function, meta.function-call variable.function, variable.function, support.function.builtin", "foreground": "var(blue)"},
+        {"name": "Types, interfaces and namespaces", "scope": "entity.name.type, entity.name.interface, entity.name.struct, entity.name.enum, entity.name.type.alias, entity.name.class, entity.name.namespace, variable.other.namespace, entity.other.inherited-class", "foreground": "var(yellow2)", "font_style": "italic"},
+        {"name": "Members, properties and object keys", "scope": "variable.other.member, variable.other.property, support.variable, meta.object-literal.key, meta.mapping.key, meta.mapping.key string, entity.name.variable", "foreground": "var(blue)"},
+        {"name": "Enum members and readonly values", "scope": "variable.other.constant, constant.other.enum, constant.other.enummember, variable.other.enummember", "foreground": "var(purple)"},
+        {"name": "Preprocessor and macros", "scope": "meta.preprocessor, entity.name.function.preprocessor, punctuation.definition.directive", "foreground": "var(red2)"},
+        {"name": "Regular expressions", "scope": "string.regexp, constant.regexp, constant.character.character-class.regexp, keyword.operator.quantifier.regexp", "foreground": "var(orange)"},
+        {"name": "HTML/CSS names", "scope": "entity.name.tag.css, entity.name.tag.less, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css, support.type.property-name", "foreground": "var(yellow2)"},
+        {"name": "Markdown links and URLs", "scope": "markup.underline.link, markup.underline.link.image, string.other.link, meta.link.inline string, meta.link.reference string", "foreground": "var(blue)"},
+        {"name": "Markdown punctuation", "scope": "punctuation.definition.list_item.markdown, punctuation.definition.blockquote.markdown, punctuation.definition.raw.code-fence, punctuation.separator.table-cell.markdown", "foreground": "var(yellow5)"},
+        {"name": "LaTeX commands", "scope": "support.function.general.latex, support.function.internal.latex, support.function.general.tex, support.function.internal.tex, entity.name.newcommand.latex", "foreground": "var(blue)"},
+        {"name": "LaTeX structure", "scope": "entity.name.environment.latex, entity.name.section.latex, entity.name.section.tex, support.class.latex, variable.parameter.function.latex", "foreground": "var(yellow2)"},
+        {"name": "LaTeX references", "scope": "constant.other.reference.latex, constant.other.citation.latex, variable.other.reference.latex, variable.other.citation.latex, entity.name.label.latex", "foreground": "var(purple)"}
+    ]
+}
+
