@@ -35,7 +35,9 @@ class PackageTests(unittest.TestCase):
         rounded_tabset = next(rule for rule in theme["rules"] if rule.get("class") == "tabset_control" and rule.get("settings", {}).get("file_tab_style") == "rounded")
         self.assertEqual({key: rounded_tabset[key] for key in ("tab_overlap", "tab_height", "connector_height", "tab_width", "tab_min_width")}, {"tab_overlap": 10, "tab_height": 32, "connector_height": 2, "tab_width": 180, "tab_min_width": 180})
         unselected_tab = next(rule for rule in theme["rules"] if rule.get("class") == "tab_control" and "!selected" in rule.get("attributes", []))
-        self.assertEqual(unselected_tab["layer1.tint"], "#1F201D")
+        self.assertEqual(unselected_tab["layer1.tint"], "#1E1F1C")
+        selected_tab = next(rule for rule in theme["rules"] if rule.get("class") == "tab_control" and "selected" in rule.get("attributes", []) and "!selected" not in rule.get("attributes", []))
+        self.assertEqual(selected_tab["layer2.opacity"], 0.0)
 
     def test_extensions_and_semantics_are_present(self):
         scopes = " ".join(rule.get("scope", "") for rule in self.rules)
