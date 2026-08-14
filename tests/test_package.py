@@ -33,7 +33,7 @@ class PackageTests(unittest.TestCase):
         self.assertIn("#5E9A8A", text)
         self.assertIn('"file_tab_style": "rounded"', text)
         rounded_tabset = next(rule for rule in theme["rules"] if rule.get("class") == "tabset_control" and rule.get("settings", {}).get("file_tab_style") == "rounded")
-        self.assertEqual({key: rounded_tabset[key] for key in ("tab_overlap", "tab_height", "connector_height")}, {"tab_overlap": 10, "tab_height": 32, "connector_height": 2})
+        self.assertEqual({key: rounded_tabset[key] for key in ("tab_overlap", "tab_height", "connector_height", "tab_width", "tab_min_width")}, {"tab_overlap": 10, "tab_height": 32, "connector_height": 2, "tab_width": 180, "tab_min_width": 180})
         unselected_tab = next(rule for rule in theme["rules"] if rule.get("class") == "tab_control" and "!selected" in rule.get("attributes", []))
         self.assertEqual(unselected_tab["layer1.tint"], "#1F201D")
 
@@ -54,6 +54,7 @@ class PackageTests(unittest.TestCase):
             self.assertFalse(set(rule.get("font_style", "").split()) - allowed)
         plugin = (ROOT / "monokai_dark_modern.py").read_text(encoding="utf-8")
         self.assertFalse([text for text in ("on_modified", "add_regions(", "find_all(") if text in plugin])
+        self.assertIn('settings.set("file_tab_style", "rounded")', plugin)
 
     def test_check_mode_does_not_write_outputs(self):
         before = (SCHEME.read_bytes(), (ROOT / "theme-build-report.json").read_bytes())

@@ -40,8 +40,9 @@ class MonokaiDarkModernSelectUiThemeCommand(sublime_plugin.ApplicationCommand):
     def run(self) -> None:
         settings = sublime.load_settings("Preferences.sublime-settings")
         settings.set("theme", UI_THEME)
+        settings.set("file_tab_style", "rounded")
         sublime.save_settings("Preferences.sublime-settings")
-        sublime.status_message("Monokai Dark Modern UI theme selected")
+        sublime.status_message("Monokai Dark Modern UI theme and rounded tabs selected")
 
 
 class MonokaiDarkModernInspectHighlightCommand(sublime_plugin.WindowCommand):
@@ -74,4 +75,3 @@ class MonokaiDarkModernCheckSemanticHighlightingCommand(sublime_plugin.WindowCom
         else:
             message = 'LSP is installed but semantic highlighting is disabled. Set "semantic_highlighting": true in LSP.sublime-settings to enable it.'
         sublime.message_dialog(message)
-
