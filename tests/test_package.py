@@ -32,6 +32,8 @@ class PackageTests(unittest.TestCase):
         self.assertIn("#171815", text)
         self.assertIn("#5E9A8A", text)
         self.assertIn('"file_tab_style": "rounded"', text)
+        rounded_tabset = next(rule for rule in theme["rules"] if rule.get("class") == "tabset_control" and rule.get("settings", {}).get("file_tab_style") == "rounded")
+        self.assertEqual({key: rounded_tabset[key] for key in ("tab_overlap", "tab_height", "connector_height")}, {"tab_overlap": 10, "tab_height": 32, "connector_height": 2})
         unselected_tab = next(rule for rule in theme["rules"] if rule.get("class") == "tab_control" and "!selected" in rule.get("attributes", []))
         self.assertEqual(unselected_tab["layer1.tint"], "#1F201D")
 
