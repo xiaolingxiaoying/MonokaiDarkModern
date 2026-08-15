@@ -40,9 +40,9 @@ class MonokaiDarkModernSelectUiThemeCommand(sublime_plugin.ApplicationCommand):
     def run(self) -> None:
         settings = sublime.load_settings("Preferences.sublime-settings")
         settings.set("theme", UI_THEME)
-        settings.set("file_tab_style", "rounded")
+        settings.set("file_tab_style", "square")
         sublime.save_settings("Preferences.sublime-settings")
-        sublime.status_message("Monokai Dark Modern UI theme and rounded tabs selected")
+        sublime.status_message("Monokai Dark Modern UI theme and square tabs selected")
 
 
 class MonokaiDarkModernInspectHighlightCommand(sublime_plugin.WindowCommand):

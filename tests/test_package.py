@@ -26,21 +26,19 @@ class PackageTests(unittest.TestCase):
         expected = {"background": "#242422", "selection": "#3A514A", "selection_border": "#3A514A", "line_highlight": "#2C2D29", "caret": "#F4F1DE", "brackets_foreground": "#A9D2C3", "find_highlight": "#C9A55A", "misspelling": "#FF6188"}
         self.assertEqual({key: self.scheme["globals"][key] for key in expected}, expected)
 
-    def test_ui_theme_uses_warm_black_and_teal(self):
+    def test_ui_theme_is_dark_modern_with_teal_selection(self):
         theme = json.loads((ROOT / "Monokai Dark Modern.sublime-theme").read_text(encoding="utf-8"))
         text = json.dumps(theme)
-        self.assertIn("#171815", text)
-        self.assertIn("#5E9A8A", text)
-        self.assertIn('"file_tab_style": "rounded"', text)
-        rounded_tabset = next(rule for rule in theme["rules"] if rule.get("class") == "tabset_control" and rule.get("settings", {}).get("file_tab_style") == "rounded")
-        self.assertEqual({key: rounded_tabset[key] for key in ("tab_overlap", "tab_height", "connector_height", "tab_width", "tab_min_width")}, {"tab_overlap": 10, "tab_height": 32, "connector_height": 2, "tab_width": 180, "tab_min_width": 180})
+        self.assertIn("#181818", text)
+        self.assertIn("#075C55", text)
+        self.assertNotIn("#04395E", text)
+        self.assertIn('"file_tab_style": "square"', text)
+        square_tabset = next(rule for rule in theme["rules"] if rule.get("class") == "tabset_control" and rule.get("settings", {}).get("file_tab_style") == "square")
+        self.assertEqual({key: square_tabset[key] for key in ("tab_overlap", "tab_width", "tab_min_width")}, {"tab_overlap": 0, "tab_width": 0, "tab_min_width": 0})
         unselected_tab = next(rule for rule in theme["rules"] if rule.get("class") == "tab_control" and "!selected" in rule.get("attributes", []))
-        self.assertEqual(unselected_tab["layer0.tint"], "#1F201D")
-        self.assertEqual({key: unselected_tab[key] for key in ("layer1.opacity", "layer2.opacity", "layer3.opacity")}, {"layer1.opacity": 0.0, "layer2.opacity": 0.0, "layer3.opacity": 0.0})
+        self.assertEqual(unselected_tab["layer1.tint"], "#181818")
         selected_tab = next(rule for rule in theme["rules"] if rule.get("class") == "tab_control" and "selected" in rule.get("attributes", []) and "!selected" not in rule.get("attributes", []))
-        self.assertEqual(selected_tab["layer2.opacity"], 0.0)
-        connector = next(rule for rule in theme["rules"] if rule.get("class") == "tab_connector")
-        self.assertEqual(connector["layer0.tint"], "#1F201D")
+        self.assertEqual(selected_tab["layer2.tint"], "#0078D4")
 
     def test_extensions_and_semantics_are_present(self):
         scopes = " ".join(rule.get("scope", "") for rule in self.rules)
@@ -59,7 +57,7 @@ class PackageTests(unittest.TestCase):
             self.assertFalse(set(rule.get("font_style", "").split()) - allowed)
         plugin = (ROOT / "monokai_dark_modern.py").read_text(encoding="utf-8")
         self.assertFalse([text for text in ("on_modified", "add_regions(", "find_all(") if text in plugin])
-        self.assertIn('settings.set("file_tab_style", "rounded")', plugin)
+        self.assertIn('settings.set("file_tab_style", "square")', plugin)
 
     def test_check_mode_does_not_write_outputs(self):
         before = (SCHEME.read_bytes(), (ROOT / "theme-build-report.json").read_bytes())

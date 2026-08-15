@@ -1,14 +1,14 @@
 # Monokai Dark Modern
 
-Sublime Text 4 theme package with a calm warm-black UI and the original
-Monokai code palette. The UI uses `#171815`; editor buffers use `#242422`.
+Sublime Text 4 theme package with a VS Code Dark Modern UI and the original
+Monokai code palette. The UI uses `#181818`; editor buffers use `#242422`.
 
 ## Install
 
 Copy this folder into `%APPDATA%\Sublime Text\Packages\Monokai Dark Modern`.
 Then use **Preferences → Package Settings → Monokai Dark Modern** to select
-the UI theme and color scheme. Selecting the UI theme enables the bundled
-angled, equal-width 180px file tabs.
+the UI theme and color scheme. Selecting the UI theme enables square file
+tabs and uses `#075C55` for selected sidebar and quick-panel rows.
 
 The generated `Monokai Dark Modern.sublime-color-scheme` is checked in. To
 rebuild it after mapping changes, run `python tools/build_theme.py`; use
